@@ -1,0 +1,18 @@
+.iconContainer {
+  position: fixed;
+  width: 100%;
+  top: 85vh;
+  height: 180px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 46%,
+    rgba(0, 0, 0, 0.06486344537815125) 100%
+  );
+}

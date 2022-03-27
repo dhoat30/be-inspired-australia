@@ -1,0 +1,173 @@
+:root {
+  --letterSpacing: 0.04rem;
+  --offWhite: #f2f2f2;
+  --beige: #efeae5;
+  --darkBeige: #fde6ce;
+  --lightGrey: #888888;
+  --blue: #007272;
+  --darkGrey: #474747;
+  --black: #303030;
+  --poppins: "Poppins", sans-serif;
+  --transition: 500ms ease-in-out;
+  --boxShadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  --cardBorderRadius: 16px;
+  --blue: #007272;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+h6 {
+  margin: 0;
+}
+.center {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.icon-logo {
+  position: absolute !important;
+  top: 2px !important;
+}
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+input {
+  font-family: "Poppins", sans-serif;
+}
+select {
+  font-family: "Poppins", sans-serif;
+}
+
+.error {
+  text-align: center;
+  color: red;
+}
+.success {
+  color: green;
+  text-align: center;
+}
+.left-align {
+  text-align: left;
+}
+
+/* breadcrumb list  */
+.breadcrumb-container ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+.breadcrumbs-list {
+  list-style: none;
+}
+.breadcrumbs-list a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--lightGrey);
+}
+.breadcrumbs-list a:hover {
+  color: black;
+}
+.breadcrumbs-list a::after {
+  content: "/";
+  margin: 0 3px;
+}
+.active-breadcrumb-list {
+  list-style: none;
+}
+.active-breadcrumb-list a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--darkGrey);
+}
+
+/* anchor tag general styling */
+a {
+  color: var(--darkGrey);
+}
+
+/* colors */
+.blue {
+  color: var(--blue);
+}
+
+/* single professional page  */
+.professional-logo > div {
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  background-color: var(--beige);
+}
+
+/* radio button styling  */
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: var(--darkGrey);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+/* zendesk  */
+#launcher {
+  bottom: 30px !important;
+}

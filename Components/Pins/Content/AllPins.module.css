@@ -1,0 +1,51 @@
+.mercCardsContainer {
+  display: column;
+  columns: 5;
+  margin: 0 20px;
+}
+@media (max-width: 1750px) {
+  .mercCardsContainer {
+    columns: 5;
+  }
+}
+@media (max-width: 1500px) {
+  .mercCardsContainer {
+    columns: 4;
+  }
+}
+@media (max-width: 1200px) {
+  .mercCardsContainer {
+    columns: 3;
+  }
+}
+@media (max-width: 1000px) {
+  .mercCardsContainer {
+    columns: 2;
+  }
+}
+@media (max-width: 700px) {
+  .mercCardsContainer {
+    columns: 2;
+  }
+}
+@media (max-width: 600px) {
+  .mercCardsContainer {
+    columns: 1;
+  }
+}
+.mercCardsContainer > * {
+  break-inside: avoid;
+}
+
+.mercCardsContainer > div {
+  height: auto;
+  width: 100% !important;
+  margin: 0 0 30px 0 !important;
+}
+@supports (grid-template-rows: masonry) {
+  .mercCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: masonry;
+  }
+}
